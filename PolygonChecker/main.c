@@ -58,7 +58,10 @@ int printShapeMenu() {
 	int shapeChoice;
 
 	printf_s("Enter number: ");
-	scanf_s("%d", &shapeChoice);
+	if (scanf_s("%d", &shapeChoice) != 1) {
+		printf("Your input is invalid !!");
+		exit(0);
+	}
 
 	return shapeChoice;
 }
@@ -67,10 +70,14 @@ int* getTriangleSides(int* triangleSides) {
 	printf_s("Enter the three sides of the triangle: ");
 	for (int i = 0; i < 3; i++)
 	{
-		scanf_s("%d", &triangleSides[i]);
+		if (scanf_s("%d", &triangleSides[i]) != 1) {
+			printf("Your input is invalid !!");
+			exit(0);
+		}
 	}
 	return triangleSides;
 }
+
 int* getRectanglePoints(int* rectanglePoints) {
 	printf_s("Enter the four points of the rectangle as x,y pairs (e.g. 1,2 3,4 5,6 7,8): ");
 	for (int i = 0; i < 8; i++)
