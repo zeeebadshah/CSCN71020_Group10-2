@@ -5,6 +5,7 @@
 
 #include "triangleSolver.h"
 
+//This function provides us with the type of triangle and the Angles of triangle
 char* analyzeTriangle(int side1, int side2, int side3) {
     char* result = "";
     if (side1 <= 0 || side2 <= 0 || side3 <= 0 || side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1) {
@@ -33,11 +34,12 @@ char* analyzeTriangle(int side1, int side2, int side3) {
     return result;
 }
 
+//Gives us the inside angle of the triangle 
 void getInsideAngle(double side1, double side2, double side3) {
     double A, B, C, radian, s, area;
     s = (side1 + side2 + side3) / 2;
 
-
+    //Using Formula 
     area = sqrt(s * (s - side1) * (s - side2) * (s - side3));
     radian = (side1 * side2 * side3) / (4 * area);
 

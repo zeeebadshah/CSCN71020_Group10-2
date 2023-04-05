@@ -4,12 +4,14 @@
 
 #include "rectangleSolver.h"
 
+//Calculates the distance between two points.
 double distance(int x1, int y1, int x2, int y2) {
     double dx = x2 - x1;
     double dy = y2 - y1;
     return sqrt(dx * dx + dy * dy);
 }
 
+//Indicates wether the inputs form a rectangle.
 char* analyzeRectangle(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4) {
     char* result = "";
     double side1 = distance(x1, y1, x2, y2);
@@ -22,6 +24,8 @@ char* analyzeRectangle(int x1, int y1, int x2, int y2, int x3, int y3, int x4, i
     if (side1 <= 0 || side2 <= 0 || side3 <= 0 || side4 <= 0) {
         result = "Not a Rectangle";
     }
+    
+    //Gives Area and Perimeter of rectangle.
     else {
         result = "Rectangle";
         double perimeter = side1 + side2 + side3 + side4;
@@ -30,4 +34,5 @@ char* analyzeRectangle(int x1, int y1, int x2, int y2, int x3, int y3, int x4, i
         printf("Perimeter: %.2lf\n", perimeter);
         printf("Area: %.2lf\n", area);
     }
+    return result;
 }
