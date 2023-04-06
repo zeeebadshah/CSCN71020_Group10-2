@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.33502.453
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PolygonChecker", "PolygonChecker\PolygonChecker.vcxproj", "{2328FAE1-A1BF-420F-9F0C-C7CCC7F13314}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RectangleTest", "RectangleTest\RectangleTest.vcxproj", "{A79FC7A7-606C-4161-B60D-3EF44B4641D9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AnalyzeTriangleTest", "AnalyzeTriangleTest\AnalyzeTriangleTest.vcxproj", "{8080C855-01FE-4627-AA3D-6EB36741CDCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{A79FC7A7-606C-4161-B60D-3EF44B4641D9}.Release|x64.Build.0 = Release|x64
 		{A79FC7A7-606C-4161-B60D-3EF44B4641D9}.Release|x86.ActiveCfg = Release|Win32
 		{A79FC7A7-606C-4161-B60D-3EF44B4641D9}.Release|x86.Build.0 = Release|Win32
+		{8080C855-01FE-4627-AA3D-6EB36741CDCC}.Debug|x64.ActiveCfg = Debug|x64
+		{8080C855-01FE-4627-AA3D-6EB36741CDCC}.Debug|x64.Build.0 = Debug|x64
+		{8080C855-01FE-4627-AA3D-6EB36741CDCC}.Debug|x86.ActiveCfg = Debug|Win32
+		{8080C855-01FE-4627-AA3D-6EB36741CDCC}.Debug|x86.Build.0 = Debug|Win32
+		{8080C855-01FE-4627-AA3D-6EB36741CDCC}.Release|x64.ActiveCfg = Release|x64
+		{8080C855-01FE-4627-AA3D-6EB36741CDCC}.Release|x64.Build.0 = Release|x64
+		{8080C855-01FE-4627-AA3D-6EB36741CDCC}.Release|x86.ActiveCfg = Release|Win32
+		{8080C855-01FE-4627-AA3D-6EB36741CDCC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -149,6 +149,9 @@
     <ClInclude Include="triangleSolver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AnalyzeTriangleTest\AnalyzeTriangleTest.vcxproj">
+      <Project>{8080c855-01fe-4627-aa3d-6eb36741cdcc}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\RectangleTest\RectangleTest.vcxproj">
       <Project>{a79fc7a7-606c-4161-b60d-3ef44b4641d9}</Project>
     </ProjectReference>
