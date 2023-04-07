@@ -63,5 +63,5 @@ void getInsideAngle(double side1, double side2, double side3) {
         C = (180 / M_PI) * asin(side3 / radian2);
     }
 
-    printf("Angles are : %.2f %.2f %3.2f \n", A, B, C);
+    printf("Angles are : %.2f %.2f %.2f \n", A, B, C);
 }
