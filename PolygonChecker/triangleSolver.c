@@ -31,8 +31,10 @@ char* analyzeTriangle(int side1, int side2, int side3) {
 }
 
 //Gives us the inside angle of the triangle 
+double A, B, C; // declare global variables
+
 void getInsideAngle(double side1, double side2, double side3) {
-    double A, B, C, radian, s, area; //Variables
+    double radian, s, area; //Variables
     s = (side1 + side2 + side3) / 2; // Calculates the semi-perimeter of the triangle
 
     //Using Formula 
@@ -62,3 +64,4 @@ void getInsideAngle(double side1, double side2, double side3) {
 
     printf("Angles are : %.2f %.2f %3.2f \n", A, B, C); //Prints the calculated angles of the triangle to two decimal points.
 }
+
